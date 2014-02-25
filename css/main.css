@@ -1,0 +1,495 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+@font-face@font-face {
+  font-family: "PFDinDisplayPro-Regular";
+  src: url("../fonts/PFDinDisplayPro-Reg.eot");
+  src: url("../fonts/PFDinDisplayPro-Reg.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Reg.svg#PF DinDisplay Pro") format('svg'), url("../fonts/PFDinDisplayPro-Reg.woff") format('woff'), url("../fonts/PFDinDisplayPro-Reg.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFDinDisplayPro-Light";
+  src: url("../fonts/PFDinDisplayPro-Light.eot");
+  src: url("../fonts/PFDinDisplayPro-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Light.svg#PF DinDisplay Pro") format('svg'), url("../fonts/PFDinDisplayPro-Light.woff") format('woff'), url("../fonts/PFDinDisplayPro-Light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFDinDisplayPro-Bold";
+  src: url("../fonts/PFDinDisplayPro-Bold.eot");
+  src: url("../fonts/PFDinDisplayPro-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Bold.svg#PF DinDisplay Pro") format('svg'), url("../fonts/PFDinDisplayPro-Bold.woff") format('woff'), url("../fonts/PFDinDisplayPro-Bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFDinDisplayPro-Medium";
+  src: url("../fonts/PFDinDisplayPro-Med.eot");
+  src: url("../fonts/PFDinDisplayPro-Med.eot?#iefix") format('embedded-opentype'), url("../fonts/PFDinDisplayPro-Med.svg#PF DinDisplay Pro") format('svg'), url("../fonts/PFDinDisplayPro-Med.woff") format('woff'), url("../fonts/PFDinDisplayPro-Med.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+html {
+  font: 16px 'PFDinDisplayPro-Light', sans-serif;
+  color: #fff;
+}
+body {
+  background: url("../img/body-bg.jpg") repeat;
+}
+p {
+  font: inherit;
+}
+a {
+  color: inherit;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  zoom: 1;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.heading {
+  text-transform: uppercase;
+}
+.bold {
+  font-family: 'PFDinDisplayPro-Bold', sans-serif;
+}
+.form-input-text {
+  display: block;
+  padding: 8px 16px;
+  color: #fa706e;
+  font-family: 'PFDinDisplayPro-Light', sans-serif;
+  font-size: 0.93rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 0px 2px #fff;
+  box-shadow: 0px 0px 0px 2px #fff;
+  border: 1px solid #ffb6b6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+.button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.button--medium {
+  background: url("../img/btn-bg.jpg") repeat;
+  padding: 6px 10px;
+  margin: 8px 0 15px;
+  font-size: 1.06rem;
+  color: #74532f;
+  text-transform: uppercase;
+  border-bottom: 1px #ba613a solid;
+}
+.b-footer {
+  background: url("../img/footer-bg.jpg") no-repeat repeat center center;
+  height: 369px;
+}
+.b-footer .container {
+  position: relative;
+  padding-left: 4rem;
+}
+.b-footer__info {
+  margin: 1.87rem 0 0;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+.b-footer__info-item {
+  display: inline-block;
+  vertical-align: top;
+}
+.b-footer__info-item + .b-footer__info-item {
+  margin-left: 4rem;
+}
+.b-footer__info-heading {
+  margin: 0 0 1.75rem;
+  color: #ffd56d;
+  font-size: 1.5rem;
+}
+.b-footer__info-text {
+  margin: 0 0 1.75rem;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+.b-footer__info-text a {
+  color: #ffd56d;
+}
+.b-footer__order-form {
+  display: inline-block;
+  float: right;
+  width: 18.75rem;
+  height: 369px;
+  background: rgba(183,82,81,0.3);
+}
+.b-footer__more {
+  width: 260px;
+  position: absolute;
+  top: 270px;
+  left: 210px;
+}
+.b-gallery {
+  background: url("../img/gallery-bg.png") repeat;
+  height: 270px;
+}
+.b-gallery .b-gallery__slider {
+  margin: 30px 0 0;
+  text-align: center;
+}
+.b-gallery .b-gallery__slider-item {
+  display: inline-block;
+}
+.b-header {
+  background: url("../img/header-bg.jpg") repeat;
+  height: 194px;
+  -webkit-box-shadow: 0 1px 20px #cecece;
+  box-shadow: 0 1px 20px #cecece;
+}
+.b-header .container {
+  padding-left: 30px;
+}
+.b-header__logo {
+  padding: 22px 0 0;
+  float: left;
+}
+.b-header__logo-image {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px 0 0;
+}
+.b-header__logo-heading {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  color: #494438;
+  line-height: 1.4;
+}
+.b-header__logo-heading--red {
+  color: #fa706e;
+  font-family: 'PFDinDisplayPro-Medium', sans-serif;
+}
+.b-header__phones {
+  padding: 22px 0 0;
+  width: 21.25rem;
+  height: 194px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  background: #fff;
+  text-align: center;
+}
+.b-header__phones-heading {
+  font-size: 1.06rem;
+  color: #3a3a3a;
+  margin: 0 0 15px;
+}
+.b-header__phones-item {
+  color: #fa706e;
+  font-family: 'PFDinDisplayPro-Regular', sans-serif;
+  font-size: 1.87rem;
+  margin: 8px 0;
+}
+.b-order-form {
+  color: #fff;
+}
+.b-order-form__wrapper {
+  padding: 0 18px;
+}
+.b-order-form__heading {
+  padding: 30px 0 20px;
+  text-align: center;
+  font-size: 1.68rem;
+  text-shadow: -1px -1px 2px #cc5d5c;
+}
+.b-order-form__heading--bg {
+  margin: 0 0 20px;
+  background: rgba(91,48,58,0.15);
+}
+.b-order-form__notice {
+  margin: 8px 0 0;
+  font-size: 0.93em;
+}
+.b-order-form__input-text {
+  width: 100%;
+}
+.b-order-form__input-text + .b-order-form__input-text {
+  margin-top: 15px;
+}
+.b-order-form__button {
+  width: 100%;
+}
+.b-order-form__text {
+  font-size: 0.81rem;
+}
+.b-our-advantages .container {
+  padding: 40px 0;
+  text-align: center;
+}
+.b-our-advantages__item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.b-our-advantages__item + .b-our-advantages__item {
+  margin-left: 3rem;
+}
+.b-our-advantages__item-heading {
+  font-family: 'PFDinDisplayPro-Regular', sans-serif;
+  margin: 10px 0;
+  color: #505050;
+}
+.b-our-advantages__item-heading:before {
+  content: '';
+  display: block;
+  margin: 0 auto 10px;
+  border-top: 1px solid #fa706e;
+  width: 100px;
+}
+.b-our-advantages__item-text {
+  font-size: 0.81rem;
+  color: #999;
+  line-height: 1.3;
+}
+.b-product {
+  background: url("../img/product-bg.jpg") repeat;
+  height: 382px;
+}
+.b-product .container {
+  padding-left: 30px;
+}
+.b-product__order-form {
+  float: right;
+  width: 21.25rem;
+  height: 382px;
+  background: url("../img/order-form-bg.jpg") repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.b-product__image {
+  margin: 28px 0 0;
+}
+.b-quotes {
+  background: url("../img/quotes-bg.png") repeat;
+  font-family: 'Gabriola', sans-serif;
+  text-align: center;
+}
+.b-quotes .container {
+  height: 272px;
+  padding-top: 2.75rem;
+  background: url("../img/quotes-container-bg.png") no-repeat 100% 18px;
+}
+.b-quotes__heading {
+  font-size: 2.06rem;
+  margin: 0 0 1.5rem;
+}
+.b-quotes__slider {
+  font-size: 2rem;
+  color: #fa706e;
+  line-height: 0.95;
+}

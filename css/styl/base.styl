@@ -1,0 +1,60 @@
+global-reset()
+
+html 
+    font 16px font-dindisplay-light;
+    color colors['white'];
+
+body
+    background url(../img/body-bg.jpg) repeat;
+
+p 
+    font inherit;
+
+a
+    color inherit;
+
+.container
+    width 1000px;
+    margin 0 auto;
+    padding 0 10px;
+    box-sizing border-box;
+    clearfix();
+
+.heading 
+    text-transform uppercase;
+
+.bold
+    font-family font-dindisplay-bold;
+
+.form-input-text
+    display block;
+    padding 8px 16px;
+    color colors['pink'];
+    font-family font-dindisplay-light;
+    font-size 0.93rem // 15px
+    box-sizing border-box;
+    box-shadow 0px 0px 0px 2px colors['white'];
+    border 1px solid #ffb6b6;
+    border-radius 5px;
+    outline none;
+
+.button
+    display inline-block;
+    box-sizing border-box;
+    border-radius 5px;
+    border none;
+    outline none;
+    cursor pointer;
+    text-decoration none;
+    text-align center;
+
+    &--medium
+        background url(../img/btn-bg.jpg) repeat;
+        padding 6px 10px;
+        margin 8px 0 15px;
+        font-size 1.06rem; // 17px
+        color #74532f;
+        text-transform uppercase;
+        border-bottom 1px #ba613a solid;
+/*
+.form-select*/

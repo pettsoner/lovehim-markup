@@ -1,0 +1,17 @@
+{
+  "name": "lovehim-markup",
+  "version": "0.0.0",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-stylus": "~0.13.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "stylus": "~0.42.2",
+    "stylus-type-utils": "0.0.3"
+  }
+}

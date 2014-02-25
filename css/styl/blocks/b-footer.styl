@@ -1,0 +1,46 @@
+.b-footer
+    background url(../img/footer-bg.jpg) no-repeat repeat center center;
+    height b-footer-height = 369px;
+    
+    .container
+        position relative;
+        padding-left 4rem;
+
+    &__info
+        margin 1.87rem 0 0;
+        display inline-block;
+        font-family: font-arial;
+
+        &-item
+            display inline-block;
+            vertical-align top;
+
+            & + & 
+                margin-left 4rem;
+            
+        &-heading
+            margin 0 0 1.75rem;
+            color colors['yellow'];
+            font-size: 1.5rem;
+
+        &-text
+            margin 0 0 1.75rem;
+            color colors['white'];
+            line-height 1.5;
+            font-size 0.875rem;
+
+            a
+                color colors['yellow'];
+
+    &__order-form
+        display inline-block;
+        float right;
+        width: 18.75rem;
+        height: b-footer-height;
+        background rgba(#b75251, 0.3);
+    
+    &__more
+        width 260px;
+        position absolute;
+        top 270px;
+        left 210px;

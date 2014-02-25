@@ -1,0 +1,47 @@
+.b-header 
+    background url(../img/header-bg.jpg) repeat;
+    height b-header-height = 194px;
+    box-shadow 0 1px 20px #cecece;
+
+    .container
+        padding-left 30px;
+    
+    &__logo
+        padding 22px 0 0;
+        float left;
+        
+        &-image
+            display: inline-block;
+            vertical-align middle;
+            margin: 0 20px 0 0;
+
+        &-heading
+            display: inline-block;
+            vertical-align middle;
+            font-size 1.25rem;
+            color #494438;
+            line-height 1.4;
+
+            &--red
+                color colors['pink'];
+                font-family font-dindisplay-medium;
+
+    &__phones
+        padding 22px 0 0;
+        width 21.25rem;
+        height: b-header-height;
+        box-sizing border-box;
+        float right;
+        background colors['white'];
+        text-align center;
+
+        &-heading 
+            font-size: 1.06rem;
+            color #3a3a3a;
+            margin: 0 0 15px;
+
+        &-item
+            color colors['pink'];
+            font-family font-dindisplay;
+            font-size 1.87rem;
+            margin: 8px 0;
