@@ -4,6 +4,7 @@ $(document).ready(function() {
         maxSlides: 5,
         slideWidth: 186,
         adaptiveHeight: true,
+        slideMargin: 5,
         pager: false,
      });
 

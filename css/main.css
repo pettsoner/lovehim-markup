@@ -344,6 +344,7 @@ a {
   font-family: 'PFDinDisplayPro-Medium', sans-serif;
   font-size: 1.68rem;
   margin: 0 0 1.5rem;
+  line-height: 0.8;
 }
 .b-gallery .bx-wrapper {
   position: relative;
