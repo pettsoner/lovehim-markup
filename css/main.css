@@ -340,12 +340,30 @@ a {
   background: url("../img/gallery-bg.png") repeat;
   height: 270px;
 }
-.b-gallery .b-gallery__slider {
-  margin: 30px 0 0;
-  text-align: center;
+.b-gallery__heading {
+  font-family: 'PFDinDisplayPro-Medium', sans-serif;
+  font-size: 1.68rem;
+  margin: 0 0 1.5rem;
 }
-.b-gallery .b-gallery__slider-item {
-  display: inline-block;
+.b-gallery .bx-wrapper {
+  position: relative;
+}
+.b-gallery .bx-wrapper .bx-controls-direction a {
+  display: block;
+  position: absolute;
+  top: 80px;
+  text-indent: -99999px;
+  background: url("../img/gallery-slider-arrows.png") no-repeat;
+  width: 12px;
+  height: 19px;
+}
+.b-gallery .bx-wrapper .bx-controls-direction .bx-next {
+  right: -25px;
+  background-position: -54px 0;
+}
+.b-gallery .bx-wrapper .bx-controls-direction .bx-prev {
+  left: -25px;
+  background-position: 0 0;
 }
 .b-header {
   background: url("../img/header-bg.jpg") repeat;
@@ -491,8 +509,16 @@ a {
   padding-top: 2.75rem;
   background: url("../img/quotes-container-bg.png") no-repeat 100% 18px;
 }
+.b-quotes__item {
+  font-size: 2rem;
+  color: #fa706e;
+  line-height: 0.95;
+}
+.b-quotes__heading {
+  font-size: 2.06rem;
+  margin: 0 0 1.5rem;
+}
 .b-quotes .bx-wrapper {
-  margin: 0 auto;
   position: relative;
 }
 .b-quotes .bx-wrapper .bx-controls-direction a {
@@ -511,13 +537,4 @@ a {
 .b-quotes .bx-wrapper .bx-controls-direction .bx-prev {
   left: -80px;
   background-position: 0 0;
-}
-.b-quotes__heading {
-  font-size: 2.06rem;
-  margin: 0 0 1.5rem;
-}
-.b-quotes__slider-item {
-  font-size: 2rem;
-  color: #fa706e;
-  line-height: 0.95;
 }

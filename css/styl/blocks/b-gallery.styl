@@ -1,10 +1,31 @@
 .b-gallery
     background url(../img/gallery-bg.png) repeat;
     height 270px;
+    
+    &__heading
+        font-family font-dindisplay-medium;
+        font-size 1.68rem;
+        margin 0 0 1.5rem;
 
-    .b-gallery__slider
-        margin 30px 0 0;
-        text-align center;
-        
-        &-item
-            display inline-block;
+    .bx-wrapper
+        //margin 0 auto;
+        position relative;
+
+        .bx-controls-direction
+            
+            a
+                display block;
+                position absolute;
+                top 80px;
+                text-indent -99999px;
+                background url(../img/gallery-slider-arrows.png) no-repeat;
+                width 12px;
+                height 19px;
+
+            .bx-next
+                right -25px;
+                background-position -54px 0;
+                
+            .bx-prev
+                left -25px;
+                background-position 0 0;
