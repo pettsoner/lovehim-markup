@@ -12,16 +12,16 @@ module.exports = function(grunt) {
                 }
             }
         },
-        imagemin: {
-            dynamic: {                         // Another target
-              files: [{
-                expand: true,                  // Enable dynamic expansion
-                cwd: 'img/',                   // Src matches are relative to this path
-                src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-                dest: 'img/'                  // Destination path prefix
-              }]
-            }
-        },
+        // imagemin: {
+        //     dynamic: {                         // Another target
+        //       files: [{
+        //         expand: true,                  // Enable dynamic expansion
+        //         cwd: 'img/',                   // Src matches are relative to this path
+        //         src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+        //         dest: 'img/'                  // Destination path prefix
+        //       }]
+        //     }
+        // },
         watch: {
             stylus: {
                 files: ['css/styl/*', 'css/styl/blocks/*'],
@@ -42,13 +42,13 @@ module.exports = function(grunt) {
                     livereload: true
                 }
             },
-            imagemin : {
-                files: ['img/*'],
-                tasks: 'imagemin',
-                options: {
-                    livereload: true
-                }
-            }
+            // imagemin : {
+            //     files: ['img/*'],
+            //     tasks: 'imagemin',
+            //     options: {
+            //         livereload: true
+            //     }
+            // }
         }
     });
 
@@ -56,6 +56,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['stylus', 'watch', 'imagemin']);
+    grunt.registerTask('default', ['stylus', 'watch']);
 
 };
