@@ -4,10 +4,11 @@
     box-shadow 0 1px 20px #cecece;
 
     .container
-        padding-left 30px;
+        padding-left 1.875rem;
     
     &__logo
         padding 22px 0 0;
+        margin 0 2.3rem 0 0;
         float left;
         
         &-image
@@ -22,7 +23,7 @@
             color #494438;
             line-height 1.4;
 
-            &--red
+            &--bold
                 color colors['pink'];
                 font-family font-dindisplay-medium;
 
@@ -42,6 +43,30 @@
 
         &-item
             color colors['pink'];
-            font-family font-dindisplay;
             font-size 1.87rem;
-            margin: 8px 0;
+            margin: 7px 0;
+
+        &-button
+            background colors['pink'];
+            margin 12px 0 0;
+            padding 7px 20px;
+            color colors['white'];
+            border-bottom 1px solid #c13d56;
+
+    &__links
+        padding 28px 0 0;
+        display inline-block;
+        vertical-align middle;
+
+        &-item
+            background url(../img/social-networks.png) no-repeat;
+            width 33px;
+            height 35px;
+            display block;
+            margin 0 0 4px;
+
+            &--vk
+                background-position 0 -37px;
+
+            &--instagram
+                background-position 0 -78px;
