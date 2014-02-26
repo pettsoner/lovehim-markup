@@ -6,6 +6,7 @@ $(document).ready(function() {
         adaptiveHeight: true,
         slideMargin: 5,
         pager: false,
+        infiniteLoop: false,
      });
 
      $('.b-quotes__slider').bxSlider({
@@ -13,6 +14,6 @@ $(document).ready(function() {
         slideWidth: 630,
         adaptiveHeight: true,
         pager: false,
-        
+        infiniteLoop: false,        
      });
 });

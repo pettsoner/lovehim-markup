@@ -279,6 +279,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
 }
 .button--medium {
   background: url("../img/btn-bg.jpg") repeat;
@@ -286,7 +287,6 @@ a {
   margin: 8px 0 15px;
   font-size: 1.06rem;
   color: #74532f;
-  text-transform: uppercase;
   border-bottom: 1px #ba613a solid;
 }
 .b-footer {
@@ -341,10 +341,30 @@ a {
   height: 270px;
 }
 .b-gallery__heading {
+  display: inline-block;
   font-family: 'PFDinDisplayPro-Medium', sans-serif;
   font-size: 1.68rem;
   margin: 0 0 1.5rem;
   line-height: 0.8;
+}
+.b-gallery__more {
+  display: inline-block;
+  float: right;
+  color: #fa706e;
+  font-size: 1.06rem;
+}
+.b-gallery__item {
+  position: relative;
+}
+.b-gallery__item a:before {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  content: '';
+  background: url("../img/zoom-icon.png") no-repeat;
+  width: 35px;
+  height: 36px;
 }
 .b-gallery .bx-wrapper {
   position: relative;
@@ -377,6 +397,7 @@ a {
 }
 .b-header__logo {
   padding: 22px 0 0;
+  margin: 0 2rem 0 0;
   float: left;
 }
 .b-header__logo-image {
@@ -391,7 +412,7 @@ a {
   color: #494438;
   line-height: 1.4;
 }
-.b-header__logo-heading--red {
+.b-header__logo-heading--bold {
   color: #fa706e;
   font-family: 'PFDinDisplayPro-Medium', sans-serif;
 }
@@ -413,9 +434,31 @@ a {
 }
 .b-header__phones-item {
   color: #fa706e;
-  font-family: 'PFDinDisplayPro-Regular', sans-serif;
   font-size: 1.87rem;
-  margin: 8px 0;
+  margin: 7px 0;
+}
+.b-header__phones-button {
+  background: #fa706e;
+  margin: 12px 0 0;
+  padding: 7px 20px;
+  color: #fff;
+  border-bottom: 1px solid #c13d56;
+}
+.b-header__links {
+  display: inline-block;
+}
+.b-header__links-item {
+  background: url("../img/social-networks.png") no-repeat;
+  width: 33px;
+  height: 35px;
+  display: block;
+  margin: 0 0 3px;
+}
+.b-header__links-item--vk {
+  background-position: 0 -37px;
+}
+.b-header__links-item--instagram {
+  background-position: 0 -78px;
 }
 .b-order-form {
   color: #fff;
@@ -504,6 +547,7 @@ a {
   background: url("../img/quotes-bg.png") repeat;
   font-family: 'Gabriola', sans-serif;
   text-align: center;
+  overflow: hidden;
 }
 .b-quotes .container {
   height: 272px;
@@ -512,7 +556,7 @@ a {
 }
 .b-quotes__item {
   font-size: 2rem;
-  color: #fa706e;
+  color: #dd373b;
   line-height: 0.95;
 }
 .b-quotes__heading {

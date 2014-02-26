@@ -3,13 +3,32 @@
     height 270px;
     
     &__heading
+        display inline-block;
         font-family font-dindisplay-medium;
         font-size 1.68rem;
         margin 0 0 1.5rem;
         line-height 0.8;
 
+    &__more
+        display inline-block;
+        float right;
+        color colors['pink'];
+        font-size 1.06rem;
+
+    &__item
+        position relative;
+
+        & a:before
+            display inline-block;
+            position absolute;
+            right 20px;
+            bottom 20px;
+            content '';
+            background url(../img/zoom-icon.png) no-repeat;
+            width 35px;
+            height 36px;
+
     .bx-wrapper
-        //margin 0 auto;
         position relative;
 
         .bx-controls-direction
