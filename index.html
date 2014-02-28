@@ -6,7 +6,8 @@
     <script src="//127.0.0.1:35729/livereload.js"></script>
     <!--<script src="js/vendor/modernizr.min.js"></script>-->
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,23 +20,23 @@
         <div class="container">
 
             <div class="b-header__logo">
-                <img src="img/header-logo.png" class="b-header__logo-image">
+                <a href="#" class="b-header__logo-image"><img src="img/header-logo.png"></a>
                 <h2 class="b-header__logo-heading heading">
                 <b class="bold">100% точное</b> попадание<br> <span class="b-header__logo-heading--bold">в сердце любимого человека!</span><br> Лучший подарок.
                 </h2>
             </div>
             
             <ul class="b-header__links">
-                <li><a href="" class="b-header__links-item b-header__links-item--facebook"></a></li>
-                <li><a href="" class="b-header__links-item b-header__links-item--vk"></a></li>
-                <li><a href="" class="b-header__links-item b-header__links-item--instagram"></a></li>
+                <li><a href="https://www.facebook.com/Amorem.ru" class="b-header__links-item b-header__links-item--facebook"></a></li>
+                <li><a href="http://vk.com/amoremru" class="b-header__links-item b-header__links-item--vk"></a></li>
+                <li><a href="http://instagram.com/amoremru" class="b-header__links-item b-header__links-item--instagram"></a></li>
             </ul>
             <div class="b-header__phones">
                 <h2 class="b-header__phones-heading heading">Наши телефоны</h2>
-                <div class="b-header__phones-item"><span>+7 (495) 532-32-50</span></div>
-                <div class="b-header__phones-item"><span>8 (800) 700-85-50</span></div>
+                <div class="b-header__phones-item">+7 (495) 532-32-50</div>
+                <div class="b-header__phones-item">&nbsp;&nbsp;8 (800) 700-85-50</div>
 
-                <a href="#" class="button b-header__phones-button">Заказать звонок</a>
+                <a href="#" class="button b-header__phones-button" data-scroll="b-product__order-form">Заказать звонок</a>
             </div>
 
         </div>
@@ -46,18 +47,18 @@
     <section class="b-product">
         <div class="container">
 
-            <img class="b-product__image" src="img/product.png">
+            <img class="b-product__image" src="img/content/product.png">
 
             <div class="b-order-form b-product__order-form">
                 <h2 class="b-order-form__heading heading">Быстрый заказ</h2>
 
-                <form class="b-order-form__wrapper">
+                <form class="b-order-form__wrapper" action="contacts.php" method="post">
 
-                    <input type="text" placeholder="Ваше имя" class="form-input-text b-order-form__input-text">
+                    <input type="text" name="name" placeholder="Ваше имя" class="form-input-text b-order-form__input-text">
 
-                    <input type="text" placeholder="+7 номер телефона" class="form-input-text b-order-form__input-text">
+                    <input type="text" name="phone" placeholder="+7 номер телефона" class="form-input-text b-order-form__input-text">
 
-                    <input type="text" placeholder="E-mail..." class="form-input-text b-order-form__input-text">
+                    <input type="text" name="email" placeholder="E-mail..." class="form-input-text b-order-form__input-text">
 
                     <p class="b-order-form__notice">Пожалуйста, заполните форму.</p>
 
@@ -89,7 +90,7 @@
             <figure class="b-our-advantages__item">
                 <img src="img/advantage-2.png" alt="">
                 <figcaption>
-                    <h2 class="b-our-advantages__item-heading">Можно выбрать <b class="bold">цвет ниты</b></h2>
+                    <h2 class="b-our-advantages__item-heading">Можно выбрать <b class="bold">цвет нити</b></h2>
                     <p class="b-our-advantages__item-text">Большой выбор цветов нити<br> для браслета.</p>
                 </figcaption>
             </figure>
@@ -120,15 +121,13 @@
             
             <h2 class="b-gallery__heading heading">Галерея</h2>
 
-            <a href="#" class="b-gallery__more">другие фотографии</a>
+            <!-- <a href="#" class="b-gallery__more">другие фотографии</a> -->
 
             <ul class="b-gallery__slider">
-                <li class="b-gallery__item"><a href="#"><img src="img/gallery-img.png" alt=""></a></li>
-                <li class="b-gallery__item"><a href="#"><img src="img/gallery-img.png" alt=""></a></li>    
-                <li class="b-gallery__item"><a href="#"><img src="img/gallery-img.png" alt=""></a></li>
-                <li class="b-gallery__item"><a href="#"><img src="img/gallery-img.png" alt=""></a></li>
-                <li class="b-gallery__item"><a href="#"><img src="img/gallery-img.png" alt=""></a></li>
-                <li class="b-gallery__item"><a href="#"><img src="img/gallery-img.png" alt=""></a></li>
+                <li class="b-gallery__item"><a href="img/content/product-img-2.jpg" rel="b-gallery"><img src="img/content/product-img-2-preview.jpg" alt=""></a></li>    
+                <li class="b-gallery__item"><a href="img/content/product-img-3.jpg" rel="b-gallery"><img src="img/content/product-img-3-preview.jpg" alt=""></a></li>
+                <li class="b-gallery__item"><a href="img/content/product-img-4.jpg" rel="b-gallery"><img src="img/content/product-img-4-preview.jpg" alt=""></a></li>
+                <li class="b-gallery__item"><a href="img/content/product-img-5.jpg" rel="b-gallery"><img src="img/content/product-img-5-preview.jpg" alt=""></a></li>
             </ul>
 
         </div>
@@ -140,13 +139,16 @@
         <div class="container">
             
             <h2 class="b-quotes__heading heading">Древняя китайская пословица гласит:</h2>
+            
+            <p class="b-quotes__text">Невидимой красной нитью соединены те,<br> кому суждено встретиться, несмотря на Время, <br>
+Место и Обстоятельства. Нить может растянуться<br> или спутаться, но никогда не порвется</p>
 
-            <ul class="b-quotes__slider">
+            <!-- <ul class="b-quotes__slider">
                 <li class="b-quotes__item">Невидимой красной нитью соединены те,<br> кому суждено встретиться, несмотря на Время, <br>
 Место и Обстоятельства. Нить может растянуться<br> или спутаться, но никогда не порвется</li>
                 <li class="b-quotes__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ratione, quidem illo atque libero placeat omnis perspiciatis porro cum expedita!</li>
                 <li class="b-quotes__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, quisquam, odio, consequatur architecto praesentium at laudantium fugiat eos nobis adipisci aut animi doloribus ipsa commodi dolores obcaecati possimus qui magni. Consequuntur, repellat deleniti debitis sunt incidunt aliquam labore tenetur atque.</li>
-            </ul>
+            </ul> -->
 
         </div>
     </section>
@@ -186,13 +188,13 @@
             <div class="b-order-form b-footer__order-form">
                 <h2 class="heading b-order-form__heading b-order-form__heading--bg">Быстрый заказ</h2>
 
-                <form class="b-order-form__wrapper">
+                <form class="b-order-form__wrapper" action="contacts.php" method="post">
 
-                    <input type="text" placeholder="Ваше имя" class="form-input-text b-order-form__input-text">
+                    <input type="text" name="name" placeholder="Ваше имя" class="form-input-text b-order-form__input-text">
 
-                    <input type="text" placeholder="+7 номер телефона" class="form-input-text b-order-form__input-text">
+                    <input type="text" name="phone" placeholder="+7 номер телефона" class="form-input-text b-order-form__input-text">
 
-                    <input type="text" placeholder="E-mail..." class="form-input-text b-order-form__input-text">
+                    <input type="text" name="email" placeholder="E-mail..." class="form-input-text b-order-form__input-text">
 
                     <p class="b-order-form__notice">Пожалуйста, заполните форму.</p>
 
@@ -205,16 +207,50 @@
                 </form>
 
             </div>
+            
+            <div class="b-footer__bottom">
+                <a href="http://www.amorem.ru" class="b-footer__bottom-more button button--medium">Другие наши товары</a>
+                <a href="http://fireseo.ru" class="b-footer__bottom-developing"><img src="img/developing.png"></a>
+            </div>
 
-            <a href="" class="b-footer__more button button--medium">Другие наши товары</a>
 
         </div>
     </footer>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter24120712 = new Ya.Metrika({id:24120712,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/24120712" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/jquery.bxslider.min.js"></script>
+    <script src="js/vendor/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

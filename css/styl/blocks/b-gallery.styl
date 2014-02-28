@@ -16,9 +16,14 @@
         font-size 1.06rem;
 
     &__item
+        background url(../img/gallery-item-bg.png) no-repeat;
         position relative;
+        width 186px;
+        height 186px;
+        box-sizing border-box;
+        padding 11px 0 0 11px;
 
-        & a:before
+        a:before
             display inline-block;
             position absolute;
             right 20px;
@@ -27,6 +32,11 @@
             background url(../img/zoom-icon.png) no-repeat;
             width 35px;
             height 36px;
+
+        img 
+            width 165px;
+            height 165px;
+            border-radius 50%;
 
     .bx-wrapper
         position relative;

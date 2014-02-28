@@ -91,8 +91,7 @@ a img {
 }
 @font-face {
   font-family: 'Gabriola';
-  src: url("../fonts/gabriola.eot");
-  src: url("../fonts/gabriola.woff") format('woff'), url("../fonts/gabriola.ttf") format('truetype');
+  src: url("../fonts/gabriola.eot"), url("../fonts/gabriola.eot?#iefix") format('embedded-opentype'), url("../fonts/gabriola.woff") format('woff'), url("../fonts/gabriola.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -330,11 +329,16 @@ a {
   height: 369px;
   background: rgba(183,82,81,0.3);
 }
-.b-footer__more {
-  width: 260px;
+.b-footer__bottom {
   position: absolute;
   top: 270px;
   left: 210px;
+  text-align: center;
+}
+.b-footer__bottom-more {
+  display: block;
+  width: 260px;
+  margin-bottom: 8px;
 }
 .b-gallery {
   background: url("../img/gallery-bg.png") repeat;
@@ -354,7 +358,14 @@ a {
   font-size: 1.06rem;
 }
 .b-gallery__item {
+  background: url("../img/gallery-item-bg.png") no-repeat;
   position: relative;
+  width: 186px;
+  height: 186px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 11px 0 0 11px;
 }
 .b-gallery__item a:before {
   display: inline-block;
@@ -365,6 +376,12 @@ a {
   background: url("../img/zoom-icon.png") no-repeat;
   width: 35px;
   height: 36px;
+}
+.b-gallery__item img {
+  width: 165px;
+  height: 165px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 .b-gallery .bx-wrapper {
   position: relative;
@@ -494,6 +511,11 @@ a {
 .b-order-form__text {
   font-size: 0.81rem;
 }
+.b-order-form__success-heading {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
 .b-our-advantages .container {
   padding: 40px 0;
   text-align: center;
@@ -550,38 +572,62 @@ a {
   font-family: 'Gabriola', sans-serif;
   text-align: center;
   overflow: hidden;
+/*.bx-wrapper
+        position relative;
+
+        .bx-controls-direction
+            
+            a
+                display block;
+                position absolute;
+                top 25px;
+                text-indent -99999px;
+                background url(../img/quotes-slider-arrows.png) no-repeat;
+                height 67px;
+                width 69px;
+
+            .bx-next
+                right -80px;
+                background-position -134px 0;
+                
+            .bx-prev
+                left -80px;
+                background-position 0 0;*/
 }
 .b-quotes .container {
   height: 272px;
   padding-top: 2.75rem;
   background: url("../img/quotes-container-bg.png") no-repeat 100% 18px;
 }
-.b-quotes__item {
+.b-quotes__text {
+  position: relative;
+  display: inline-block;
+  max-width: 650px;
   font-size: 2rem;
   color: #dd373b;
   line-height: 0.95;
 }
-.b-quotes__heading {
-  font-size: 2.06rem;
-  margin: 0 0 1.5rem;
-}
-.b-quotes .bx-wrapper {
-  position: relative;
-}
-.b-quotes .bx-wrapper .bx-controls-direction a {
+.b-quotes__text:before {
+  content: '';
   display: block;
   position: absolute;
   top: 25px;
-  text-indent: -99999px;
-  background: url("../img/quotes-slider-arrows.png") no-repeat;
+  background: url("../img/quotes-arrows.png") no-repeat;
   height: 67px;
   width: 69px;
+  left: -100px;
 }
-.b-quotes .bx-wrapper .bx-controls-direction .bx-next {
-  right: -80px;
-  background-position: -134px 0;
+.b-quotes__text:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 25px;
+  background: url("../img/quotes-arrows.png") no-repeat -134px 0;
+  height: 67px;
+  width: 69px;
+  right: -100px;
 }
-.b-quotes .bx-wrapper .bx-controls-direction .bx-prev {
-  left: -80px;
-  background-position: 0 0;
+.b-quotes__heading {
+  font-size: 2.06rem;
+  margin: 0 0 1.5rem;
 }
